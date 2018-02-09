@@ -35,7 +35,7 @@ public class TestServiceActivity extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState ) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_test_service );
-        mStartButton = (Button) findViewById( R.id.startButton );
+        mStartButton = findViewById( R.id.startButton );
     }
 
     @Override

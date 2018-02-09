@@ -32,10 +32,10 @@ public class LocatorJobService extends JobService {
             @Override
             public void run() {
                 Location location = mLocator.getLocation();
-                //some calculations
+                // here you can send location to your app with sendBroadcast()
                 try { TimeUnit.SECONDS.sleep(5); } catch (InterruptedException e) { e.printStackTrace(); }
                 mLocator.removeLocationUpdates();
-                jobFinished( jobParameters, false ); // call this in outer thread to report service has done it's work
+                jobFinished( jobParameters, false ); // call this in outer thread to report  service has done it's work
             }
         });
         thread.start();
