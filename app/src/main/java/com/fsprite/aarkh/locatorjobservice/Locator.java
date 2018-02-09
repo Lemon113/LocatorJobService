@@ -13,8 +13,6 @@ import com.google.android.gms.tasks.Task;
 
 import java.util.ArrayList;
 
-
-
 public class Locator extends LocationCallback implements OnSuccessListener<Location> {
 
     private static final String LOG_TAG = "LocatorJobServiceLogs";
